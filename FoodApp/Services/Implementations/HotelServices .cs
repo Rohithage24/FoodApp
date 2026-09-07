@@ -75,7 +75,7 @@ namespace FoodApp.Services.Implementations
             };
         }
 
-<<<<<<< HEAD
+
         public async Task<HotelsResponseDtos> UpdateHotelAsync(int id, UpdateHotelDtos updateHotel)
         {
             var exhotel = await _hotelRepository.GetHotelsAsync(id);
@@ -135,11 +135,7 @@ namespace FoodApp.Services.Implementations
         public async Task<HotelsResponseDtos> HotelsLoginAsync(LoginDtos loginDtos)
         {
             var hotel = await _hotelRepository.HotelsLoginAsync(loginDtos.Username);
-=======
-        public async Task<HotelsResponseDtos> HotelsLoginAsync(LoginDtos loginDtos)
-        {
-            var hotel = await _hotelRepository.HotelsLoginAsync(loginDtos);
->>>>>>> 8432a33b83dcbe1aea3b13fdd7be926f31355329
+
 
             if (hotel == null)
             {

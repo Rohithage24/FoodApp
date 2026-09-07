@@ -47,7 +47,7 @@ namespace FoodApp.Repositories.Implementations
             return newHotel;
         }
 
-<<<<<<< HEAD
+
         public async Task<Hotels> UpdateHotelAsync(Hotels exsitingData, UpdateHotelDtos updateHotel)
         {
             exsitingData.Name = updateHotel.Name;
@@ -74,11 +74,7 @@ namespace FoodApp.Repositories.Implementations
         public async Task<Hotels?> HotelsLoginAsync(string? Username)
         {
             return await _context.Hotels.FirstOrDefaultAsync(h=>h.Email == Username);
-=======
-       public async Task<Hotels?> HotelsLoginAsync(LoginDtos loginDtos)
-        {
-            return await _context.Hotels.FirstOrDefaultAsync(h=>h.Email == loginDtos.Username);
->>>>>>> 8432a33b83dcbe1aea3b13fdd7be926f31355329
+
         }
     }
 }
