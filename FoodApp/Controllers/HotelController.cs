@@ -50,6 +50,7 @@ namespace FoodApp.Controllers
             return Ok(hotel);
         }
 
+<<<<<<< HEAD
         [HttpPut("{id:int}")]
         public async Task<ActionResult<HotelsResponseDtos>> UpdateHotelAsync(int id , [FromBody] UpdateHotelDtos UpdateHotel)
         {
@@ -85,6 +86,8 @@ namespace FoodApp.Controllers
                 return StatusCode(500, new { message = ex.Message });
             }
         }
+=======
+>>>>>>> 8432a33b83dcbe1aea3b13fdd7be926f31355329
         [HttpPost("login")]
         public async Task<ActionResult<HotelsResponseDtos>> HotelsLogin(LoginDtos loginDtos)
         {
